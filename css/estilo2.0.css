@@ -101,9 +101,7 @@ menu li :active { /*Cuando da click en el mouse */
     padding: 0px;
 }
 
-@media only screen and (max-width: 550px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
+@media screen and (max-width: 600px) {
+    li.right,
+    li{float: none;}
+    video{ max-height: 301px; max-width: 430px;}
