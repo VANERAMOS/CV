@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+a{
+    color: #ffffff;
+}
+
+body{
+    background-color: #c0fdfb;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#64b6ac ;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+.menu ul {
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 0;
+    list-style-type: none;/*desactiva viñetas*/
+    overflow: auto; /*Especifica qué sucede si el contenido
+    del cuadro de un elemento se desborda */
+    background-color: #333;
+}
+.menu li {
+    float: left;
+    display: list-item;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+menu li :hover { /*Cuando pasa el mouse sobre el elemento*/
+    background-color: #64b6ac;
+    color:#333;
+}
+
+menu li :active { /*Cuando da click en el mouse */
+    background-color: #609acf;
+    font-size: 120%;
+}
+
+.footer {
+    background-color: #64b6ac;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-3 {width: 100%;} /*Datos*/
+.col-6 {width: 50%;} /* foto */
+.col-9 {width: 50%;} /* video */
+.col-12 {width: 100%;} 
+
+#prof{
+    width: 500px;
+    height: 500px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+}
+
+#cont{
+    font-size: 20px;
+    padding: 0%;
+}
+
+.cinta{
+    background-color: #64b6ac;
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    padding: 0px;
+}
+
+#escuelas img{
+    width: 700px;
+    height: 400px;;
+}
+
+#cafe img{
+    width: 400px;
+    height: 400px;
+}
+#palacio img{
+    width: 700px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+}
+
